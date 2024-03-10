@@ -1,0 +1,34 @@
+{
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "args": [],
+            "env": {
+                "LOG_LEVEL": "debug"
+            },
+            "cwd": "${workspaceFolder:using-environment-variables-in-swift-sample}",
+            "name": "Debug using-environment-variables-in-swift-sample",
+            "program": "${workspaceFolder:using-environment-variables-in-swift-sample}/.build/debug/using-environment-variables-in-swift-sample",
+            "preLaunchTask": "swift: Build Debug using-environment-variables-in-swift-sample"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "args": [],
+            "env": {
+                "LOG_LEVEL": "info"
+            },
+            "cwd": "${workspaceFolder:using-environment-variables-in-swift-sample}",
+            "name": "Release using-environment-variables-in-swift-sample",
+            "program": "${workspaceFolder:using-environment-variables-in-swift-sample}/.build/release/using-environment-variables-in-swift-sample",
+            "preLaunchTask": "swift: Build Release using-environment-variables-in-swift-sample"
+        }
+    ]
+}
